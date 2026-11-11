@@ -291,3 +291,23 @@ Contexto — La revisión tier 1 detectó estadísticas finales ausentes, falta 
 Decisión — Mostrar puntuación, virus eliminados y cadenas de ambos jugadores; añadir `Volver al inicio`; y comprobar en dos navegadores que un estado modificado por una entrada aceptada coincide en ambos tableros.
 
 Por qué — La pantalla final y el flujo de dos sesiones deben cumplir el contrato observable de la spec; `pnpm verify` y la repetición e2e confirmaron los cambios.
+
+## 2026-11-11 — Semilla reproducible para los recorridos e2e (feature: duelo-privado-online, task: T013)
+
+Contexto — La prueba e2e repetida falló de forma intermitente porque un tablero inicial aleatorio podía bloquearse antes de completar chat y reconexión.
+
+Opciones — Quitar las entradas de juego de la prueba; tolerar que la partida termine; o fijar semillas solo en el servidor e2e.
+
+Decisión — Configurar `GAME_TEST_SEED` en Playwright para derivar las dos semillas de una distribución conocida; rechazar esa variable en producción. La prueba falla explícitamente si no encuentra un movimiento lateral válido en vez de enviar accidentalmente una caída instantánea.
+
+Por qué — Mantiene la aleatoriedad en producción y hace repetible el recorrido real de controles, chat y reconexión sin ocultar fallos de entrada.
+
+## 2026-11-11 — Esperar la detección real de desconexión en e2e (feature: duelo-privado-online, task: T013)
+
+Contexto — La aserción de pausa podía vencer antes de que el transporte Colyseus detectara un WebSocket sin respuesta; su configuración local usa ping cada 3 segundos y dos reintentos.
+
+Opciones — Añadir una espera fija; relajar la comprobación; o conservar la aserción web-first con margen superior al ciclo máximo de detección.
+
+Decisión — Dar hasta 10 segundos a las aserciones de estado desconectado, sin introducir `waitForTimeout`.
+
+Por qué — El tiempo de espera cubre el comportamiento real del transporte y mantiene la espera basada en el estado observable.

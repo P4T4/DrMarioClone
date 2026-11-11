@@ -57,9 +57,20 @@ function failureError(reason: string): Error {
 
 function createRoomService(): RoomService {
   const configuredTtl = process.env.GAME_WAITING_ROOM_TTL_MS;
-  return configuredTtl === undefined
-    ? new RoomService()
-    : new RoomService({ waitingRoomTtlMs: Number(configuredTtl) });
+  const testSeed = process.env.GAME_TEST_SEED;
+  if (testSeed !== undefined && process.env.NODE_ENV === 'production') {
+    throw new Error('GAME_TEST_SEED cannot be set in production');
+  }
+
+  let testSeedIndex = 0;
+  return new RoomService({
+    ...(configuredTtl === undefined
+      ? {}
+      : { waitingRoomTtlMs: Number(configuredTtl) }),
+    ...(testSeed === undefined
+      ? {}
+      : { generateSeed: () => `${testSeed}:${testSeedIndex++}` }),
+  });
 }
 
 class PrivateDuelRoom extends Room {
@@ -499,6 +510,15 @@ const gameServer = new Server({
     app.get('/health', (_request: Request, response: Response) => {
       response.json({ status: 'ok' });
     });
+    const healthToken = process.env.GAME_HEALTH_TOKEN;
+    if (healthToken !== undefined) {
+      app.get(
+        `/health/${healthToken}`,
+        (_request: Request, response: Response) => {
+          response.json({ status: 'ok' });
+        },
+      );
+    }
   },
 });
 

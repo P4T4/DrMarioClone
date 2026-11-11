@@ -1,6 +1,8 @@
+import { randomUUID } from 'node:crypto';
 import { defineConfig, devices } from '@playwright/test';
 
 const isCI = Boolean(process.env.CI);
+const gameHealthToken = randomUUID();
 
 export default defineConfig({
   testDir: './tests/e2e',
@@ -17,10 +19,13 @@ export default defineConfig({
   webServer: [
     {
       command: 'pnpm dev:game',
-      url: 'http://127.0.0.1:2567/health',
+      url: `http://127.0.0.1:2567/health/${gameHealthToken}`,
       reuseExistingServer: false,
+      timeout: 15_000,
       env: {
         GAME_WAITING_ROOM_TTL_MS: '5000',
+        GAME_HEALTH_TOKEN: gameHealthToken,
+        GAME_TEST_SEED: 'private-duel-e2e:1178',
       },
     },
     {

@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 test('two sessions create a private room and exchange match state and chat', async ({
   browser,
 }) => {
-  const ownerContext = await browser.newContext();
+  const ownerContext = await browser.newContext({ hasTouch: true });
   const guestContext = await browser.newContext();
   const thirdContext = await browser.newContext();
 
@@ -46,6 +46,8 @@ test('two sessions create a private room and exchange match state and chat', asy
     await expect(guest.locator('#room-status')).toContainText(
       'Partida en curso',
     );
+    await expect(owner.locator('#own-board canvas')).toBeVisible();
+    await expect(guest.locator('#own-board canvas')).toBeVisible();
 
     await third.getByLabel('Código de sala').fill(roomCode);
     await third.getByRole('button', { name: 'Unirse a sala' }).click();
@@ -101,9 +103,12 @@ test('two sessions create a private room and exchange match state and chat', asy
           );
         });
 
-      return canMove(-1) ? 'ArrowLeft' : canMove(1) ? 'ArrowRight' : ' ';
+      return canMove(-1) ? 'ArrowLeft' : canMove(1) ? 'ArrowRight' : null;
     });
 
+    if (movementKey === null) {
+      throw new Error('Active capsule has no valid horizontal keyboard move');
+    }
     await owner.locator('#own-board').click();
     await owner.keyboard.press(movementKey);
     await expect(owner.locator('#action-status')).toContainText(
@@ -126,6 +131,60 @@ test('two sessions create a private room and exchange match state and chat', asy
       })
       .toBe(true);
 
+    const touchInput = await ownerBoardCells.evaluateAll((cells) => {
+      const labels = cells.map((cell) => cell.getAttribute('aria-label') ?? '');
+      const activeCells = labels.flatMap((label, index) =>
+        label.includes('cápsula activa') ? [index] : [],
+      );
+      const activeSet = new Set(activeCells);
+      const canMove = (columnDelta: number) =>
+        activeCells.every((index) => {
+          const column = index % 8;
+          const target = index + columnDelta;
+          return (
+            column + columnDelta >= 0 &&
+            column + columnDelta < 8 &&
+            (activeSet.has(target) || labels[target]?.endsWith(': vacío'))
+          );
+        });
+
+      return canMove(-1) ? 'MoveLeft' : canMove(1) ? 'MoveRight' : null;
+    });
+    if (touchInput === null) {
+      throw new Error('Active capsule has no valid horizontal touch move');
+    }
+    const beforeTouchState = await ownerBoardCells.evaluateAll((cells) =>
+      cells.map((cell) => cell.getAttribute('aria-label')),
+    );
+    await owner
+      .getByRole('button', {
+        name:
+          touchInput === 'MoveLeft'
+            ? 'Mover a la izquierda'
+            : 'Mover a la derecha',
+      })
+      .tap();
+    await expect
+      .poll(() =>
+        ownerBoardCells.evaluateAll((cells) =>
+          cells.map((cell) => cell.getAttribute('aria-label')),
+        ),
+      )
+      .not.toEqual(beforeTouchState);
+    await expect
+      .poll(async () => {
+        const [ownerState, guestState] = await Promise.all([
+          ownerBoardCells.evaluateAll((cells) =>
+            cells.map((cell) => cell.getAttribute('aria-label')),
+          ),
+          guestOpponentCells.evaluateAll((cells) =>
+            cells.map((cell) => cell.getAttribute('aria-label')),
+          ),
+        ]);
+        return JSON.stringify(ownerState) === JSON.stringify(guestState);
+      })
+      .toBe(true);
+
     await owner.getByLabel('Mensaje de chat').fill('Hola desde owner');
     await owner.getByRole('button', { name: 'Enviar mensaje' }).click();
     await expect(owner.getByText('Hola desde owner')).toBeVisible();
@@ -143,9 +202,11 @@ test('two sessions create a private room and exchange match state and chat', asy
     await guestContext.setOffline(true);
     await expect(owner.locator('#room-status')).toContainText(
       'Partida pausada',
+      { timeout: 10_000 },
     );
     await expect(guest.locator('#room-status')).toContainText(
       'Conexión perdida',
+      { timeout: 10_000 },
     );
     const pausedMatchTime = await owner.locator('#match-time').innerText();
     await owner.waitForTimeout(1_200);
@@ -182,6 +243,21 @@ test('two sessions create a private room and exchange match state and chat', asy
       thirdContext.close(),
     ]);
   }
+});
+
+test('alias input accepts twenty non-BMP Unicode code points', async ({
+  page,
+}) => {
+  await page.goto('/');
+
+  const alias = page.getByLabel('Tu alias');
+  await alias.pressSequentially('😀'.repeat(20));
+
+  await expect(alias).toHaveValue('😀'.repeat(20));
+  await alias.fill('😀'.repeat(21));
+  expect(
+    await alias.evaluate((input: HTMLInputElement) => input.checkValidity()),
+  ).toBe(false);
 });
 
 test('an expired room explains how to recover on both sessions', async ({

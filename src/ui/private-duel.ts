@@ -14,6 +14,7 @@ import type {
 } from '../shared/room-protocol';
 import { mapKeyboard, mapTouch, presentRoomFailure } from './controls';
 import type { RecoveryAction, RoomFailure, TouchAction } from './controls';
+import { PhaserBoard } from './phaser-board';
 
 type PublicGameState = RoomMatchSnapshot['states'][number];
 
@@ -144,6 +145,7 @@ function cellDescription(
 function renderBoard(
   elements: readonly HTMLElement[],
   state: PublicGameState,
+  renderer: PhaserBoard,
 ): void {
   const activeSegments = new Map<number, VirusColor>();
   const capsule = state.activeCapsule;
@@ -182,6 +184,7 @@ function renderBoard(
     element.textContent = description.symbol;
     element.setAttribute('aria-label', description.label);
   }
+  renderer.render(state);
 }
 
 const lobby = requiredElement<HTMLElement>('#duel-lobby');
@@ -208,10 +211,20 @@ const leaveButton = requiredElement<HTMLButtonElement>('#leave-button');
 const returnButton = requiredElement<HTMLButtonElement>('#return-button');
 const matchPanel = requiredElement<HTMLElement>('#match-panel');
 const actionStatus = requiredElement<HTMLParagraphElement>('#action-status');
-const ownBoard = createCells(requiredElement<HTMLElement>('#own-board'));
-const opponentBoard = createCells(
-  requiredElement<HTMLElement>('#opponent-board'),
+const ownBoard = createCells(
+  requiredElement<HTMLElement>('#own-board-accessible'),
 );
+const opponentBoard = createCells(
+  requiredElement<HTMLElement>('#opponent-board-accessible'),
+);
+const ownBoardRendererContainer = requiredElement<HTMLElement>(
+  '#own-board-renderer',
+);
+const opponentBoardRendererContainer = requiredElement<HTMLElement>(
+  '#opponent-board-renderer',
+);
+let ownBoardRenderer: PhaserBoard | null = null;
+let opponentBoardRenderer: PhaserBoard | null = null;
 const ownStats = requiredElement<HTMLParagraphElement>('#own-stats');
 const opponentStats = requiredElement<HTMLParagraphElement>('#opponent-stats');
 const matchTime = requiredElement<HTMLElement>('#match-time');
@@ -513,11 +526,20 @@ function renderMatch(match: RoomMatchSnapshot): void {
   if (seat === null) {
     return;
   }
+  matchPanel.hidden = false;
+  if (ownBoardRenderer === null) {
+    ownBoardRenderer = new PhaserBoard(ownBoardRendererContainer);
+    opponentBoardRenderer = new PhaserBoard(opponentBoardRendererContainer);
+  }
+  ownBoardRenderer.resume();
+  opponentBoardRenderer?.resume();
   const opponentSeat = seat === 0 ? 1 : 0;
   const ownState = match.states[seat];
   const rivalState = match.states[opponentSeat];
-  renderBoard(ownBoard, ownState);
-  renderBoard(opponentBoard, rivalState);
+  renderBoard(ownBoard, ownState, ownBoardRenderer);
+  if (opponentBoardRenderer !== null) {
+    renderBoard(opponentBoard, rivalState, opponentBoardRenderer);
+  }
   ownStats.textContent = playerStatsDescription(ownState);
   opponentStats.textContent = playerStatsDescription(rivalState);
   syncMatchTime(match.elapsedMs, match.paused || match.result !== null);
@@ -605,6 +627,10 @@ function sendInput(input: string | null): void {
 
 async function createRoom(): Promise<void> {
   const alias = createAlias.value;
+  if (!isAliasLengthValid(createAlias)) {
+    createAlias.reportValidity();
+    return;
+  }
   const button = createForm.querySelector<HTMLButtonElement>(
     'button[type="submit"]',
   );
@@ -626,6 +652,10 @@ async function createRoom(): Promise<void> {
 
 async function joinRoom(): Promise<void> {
   const alias = joinAlias.value;
+  if (!isAliasLengthValid(joinAlias)) {
+    joinAlias.reportValidity();
+    return;
+  }
   const code = joinCode.value.trim().toUpperCase();
   const button = joinForm.querySelector<HTMLButtonElement>(
     'button[type="submit"]',
@@ -693,7 +723,23 @@ async function leaveRoom(): Promise<void> {
   chatMessages = [];
   roomPanel.hidden = true;
   lobby.hidden = false;
+  ownBoardRenderer?.pause();
+  opponentBoardRenderer?.pause();
   clearErrors();
+}
+
+function isAliasLengthValid(input: HTMLInputElement): boolean {
+  const isValid = [...input.value.trim()].length <= 20;
+  input.setCustomValidity(
+    isValid ? '' : 'El alias debe tener 20 caracteres o menos.',
+  );
+  return isValid;
+}
+
+for (const aliasInput of [createAlias, joinAlias]) {
+  aliasInput.addEventListener('input', () => {
+    isAliasLengthValid(aliasInput);
+  });
 }
 
 createForm.addEventListener('submit', (event) => {

@@ -3,25 +3,13 @@
   <div id="duel-lobby" class="lobby">
     <form id="create-room-form">
       <label for="create-alias">Tu alias</label>
-      <input
-        id="create-alias"
-        name="alias"
-        maxlength="20"
-        autocomplete="nickname"
-        required
-      />
+      <input id="create-alias" name="alias" autocomplete="nickname" required />
       <button type="submit">Crear sala</button>
     </form>
 
     <form id="join-room-form">
       <label for="join-alias">Alias para unirte</label>
-      <input
-        id="join-alias"
-        name="alias"
-        maxlength="20"
-        autocomplete="nickname"
-        required
-      />
+      <input id="join-alias" name="alias" autocomplete="nickname" required />
       <label for="join-code">Código de sala</label>
       <input
         id="join-code"
@@ -80,22 +68,36 @@
       <div class="boards">
         <section aria-labelledby="own-board-heading">
           <h4 id="own-board-heading">Tu tablero</h4>
-          <div
-            id="own-board"
-            class="board"
-            role="grid"
-            aria-label="Tu tablero de juego"
-          ></div>
+          <div id="own-board" class="board">
+            <div
+              id="own-board-renderer"
+              class="board__renderer"
+              aria-hidden="true"
+            ></div>
+            <div
+              id="own-board-accessible"
+              class="board__accessible-grid"
+              role="grid"
+              aria-label="Tu tablero de juego"
+            ></div>
+          </div>
           <p id="own-stats"></p>
         </section>
         <section aria-labelledby="opponent-board-heading">
           <h4 id="opponent-board-heading">Tablero rival</h4>
-          <div
-            id="opponent-board"
-            class="board"
-            role="grid"
-            aria-label="Tablero rival"
-          ></div>
+          <div id="opponent-board" class="board">
+            <div
+              id="opponent-board-renderer"
+              class="board__renderer"
+              aria-hidden="true"
+            ></div>
+            <div
+              id="opponent-board-accessible"
+              class="board__accessible-grid"
+              role="grid"
+              aria-label="Tablero rival"
+            ></div>
+          </div>
           <p id="opponent-stats"></p>
         </section>
       </div>
@@ -264,12 +266,33 @@
   }
 
   .board {
-    display: grid;
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+    position: relative;
     width: min(100%, 22rem);
     aspect-ratio: 1 / 2;
     border: 2px solid #172033;
     background: #f5f7fa;
+  }
+
+  .board__renderer,
+  .board__accessible-grid {
+    position: absolute;
+    inset: 0;
+  }
+
+  .board__renderer canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .board__accessible-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
 
   .cell {

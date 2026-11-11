@@ -283,3 +283,14 @@ status: active
 - scope: esta instrucción permite abrir el pull request sin cerrar T012; no cambia los criterios aprobados ni convierte la validación móvil en evidencia completada.
 - review: el riesgo global es tier 2 (`auth`, `default`, `docs`); la integración requiere aprobación humana.
 - next: publicar la rama limpia y abrir el pull request con las pruebas, el riesgo y la limitación de T012 descritos.
+
+## Remediación de la revisión de cierre — 2026-11-11
+- status: correcciones implementadas; revisión final pendiente. T012 permanece pendiente por decisión del usuario y T013 no se marca completa.
+- findings: 5 reportados → 5 únicos → 4 confirmados corregidos; el hallazgo de recuperación tras recargar la página fue refutado porque no forma parte del contrato aprobado.
+- red: el cierre detectó falta de tablero Phaser visible, conteo HTML de alias incompatible con emoji, ausencia de prueba táctil y posible reutilización de un servidor e2e ajeno. Las pruebas de canvas y alias fallaron antes de sus correcciones. El flujo largo también falló 1/5 veces con un tablero aleatorio que terminó por bloqueo antes del chat.
+- green: `pnpm exec playwright test tests/e2e/private-duel.spec.ts --grep 'two sessions create a private room|alias input accepts' --workers=1 --repeat-each=5` pasó 10 pruebas.
+- fixes: Phaser renderiza ambos tableros y se conserva la cuadrícula ARIA; alias cuenta puntos de código y valida 20/21 emoji; Playwright comprueba canvas y movimiento táctil; el servidor e2e requiere una ruta de salud aleatoria y una semilla reproducible de prueba. El estado de desconexión espera hasta 10 s para cubrir los pings/reintentos del transporte.
+- controls: `pnpm verify` ✅ formato ✅ lint ✅ tipos ✅ unitarias ✅ (54) integración ✅ (24) e2e ✅ (5) build ✅; `pnpm audit --prod` ✅ (sin vulnerabilidades conocidas). El build informa que un chunk supera 500 kB.
+- traceability: AC4 y AC10 cuentan con pruebas de entradas/sincronización, canvas, toque y cuadrícula accesible. La validación física móvil y las capturas de T012 no se ejecutaron.
+- risk: el cierre anterior clasificó la rama completa como tier 2 (`auth`, `default`, `docs`); requiere aprobación humana.
+- next: completar la revisión final del diff, registrar la verificación con T012 explícitamente pendiente y abrir el PR para revisión sin fusionarlo.
