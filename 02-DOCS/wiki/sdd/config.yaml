@@ -41,7 +41,8 @@ testing:
       - pnpm test:integration
       - pnpm test:e2e
       - pnpm build
-  gap: These commands are specified but will not exist until T001 creates the package scaffold and scripts.
+  e2e_setup: pnpm test:e2e:install
+  gap: T001 created the scaffold and scripts; unit and integration suites remain empty until their planned tasks add tests.
 phase_rules:
   proposal: optional-on-ambiguity
   specify: requires intent or proposal
