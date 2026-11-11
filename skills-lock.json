@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "skills": {
+    "optimize-threejs-games": {
+      "source": "MengTo/Skills",
+      "sourceType": "github",
+      "skillPath": "agent-skills/game-development/optimize-threejs-games/SKILL.md",
+      "computedHash": "cd499511ccecb8bf60fe6832b14b371702a02511a7ff53b4ce31846852a088bf"
+    }
+  }
+}

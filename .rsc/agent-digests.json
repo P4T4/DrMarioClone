@@ -1,0 +1,12 @@
+{
+  ".claude/agents/developer.md": "bb9b7ddfad2adfe906d9e829564737a8dc24d9821834f69e4fc5c93bfd6cf8fd",
+  ".claude/agents/finding-verifier.md": "5d536ff49566f9ddabb6eb2978262796fae5d4798d278e4cd943aaadef5ee397",
+  ".claude/agents/refuter-correctness.md": "68cf58c82b0c3af3d1dabe347f81d577b1c1133696038450eb5f98129a073d2f",
+  ".claude/agents/refuter-security.md": "0c00aeaad89c1443abe2668b34711abf707ee7dd666e82500bd05ceaf7b2f8c0",
+  ".claude/agents/refuter-tests.md": "e8463b44874ceebbe334dadcf0c4566c5f952580a77017ca4fe2428299afd94b",
+  ".github/agents/developer.agent.md": "a547448a373681db02c05b36c8843b13124dd1a13659d5300d2cae2925f432be",
+  ".github/agents/finding-verifier.agent.md": "f4ab0869ce3f8b6babb984ac892a52ff02c350c7e01cc453a62e5ffa60c12338",
+  ".github/agents/refuter-correctness.agent.md": "f5348d66a812dc99349741831b1828c405f3d12f88823c547da27ca0c8fa96a4",
+  ".github/agents/refuter-security.agent.md": "330bb5a36a0f8428cc8c461c5ead992e43122efd2e4d12e20ff3487114af58bf",
+  ".github/agents/refuter-tests.agent.md": "d090a09386d4ca8a7f3d9cbbc09c5d6edf50d3b90593d6a0432ceae28cf10747"
+}

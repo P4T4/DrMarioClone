@@ -1,0 +1,257 @@
+{
+  "skills": {
+    "analyze": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\analyze"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\analyze"
+    },
+    "asdd": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\asdd"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\asdd"
+    },
+    "automation-strategy": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\automation-strategy"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\automation-strategy"
+    },
+    "clarify": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\clarify"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\clarify"
+    },
+    "connect-tool": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\connect-tool"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\connect-tool"
+    },
+    "constitution": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\constitution"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\constitution"
+    },
+    "debug": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\debug"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\debug"
+    },
+    "decision-challenge": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\decision-challenge"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\decision-challenge"
+    },
+    "deprecation": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\deprecation"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\deprecation"
+    },
+    "design": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\design"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\design"
+    },
+    "fable-operator": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\fable-operator"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\fable-operator"
+    },
+    "ftd": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\ftd"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\ftd"
+    },
+    "harness": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\harness"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\harness"
+    },
+    "idea-refinement": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\idea-refinement"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\idea-refinement"
+    },
+    "implement": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\implement"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\implement"
+    },
+    "init": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\init"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\init"
+    },
+    "orient": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\orient"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\orient"
+    },
+    "parallel": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\parallel"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\parallel"
+    },
+    "plan": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\plan"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\plan"
+    },
+    "review": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\review"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\review"
+    },
+    "sdd-init": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\sdd-init"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\sdd-init"
+    },
+    "security-audit": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\security-audit"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\security-audit"
+    },
+    "ship": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\ship"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\ship"
+    },
+    "simplify-code": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\simplify-code"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\simplify-code"
+    },
+    "source-grounded-development": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\source-grounded-development"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\source-grounded-development"
+    },
+    "specify": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\specify"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\specify"
+    },
+    "suggest": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\suggest"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\suggest"
+    },
+    "tasks": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\tasks"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\tasks"
+    },
+    "tidy": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\tidy"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\tidy"
+    },
+    "unslop": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\unslop"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\unslop"
+    },
+    "ux": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\ux"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\ux"
+    },
+    "verify": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\verify"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\verify"
+    },
+    "worktrees": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.github\\rsc\\worktrees"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\worktrees"
+    }
+  },
+  "agents": [
+    "developer",
+    "finding-verifier",
+    "refuter-correctness",
+    "refuter-security",
+    "refuter-tests"
+  ],
+  "agentCollisions": [],
+  "agentsKept": [],
+  "explicitAgents": [],
+  "memory": {
+    "mode": "unsupported",
+    "reason": "no-local-lifecycle",
+    "paths": []
+  },
+  "update": {
+    "mode": "agent"
+  },
+  "knowledge": {
+    "mode": "unsupported",
+    "reason": null,
+    "paths": []
+  },
+  "gitPermissions": {
+    "mode": "unsupported",
+    "path": null
+  },
+  "policy": {
+    "baseAgents": true,
+    "alwaysOn": true,
+    "codeHooks": true,
+    "dangerGuard": true,
+    "laneGate": true,
+    "gitmojiGuard": true,
+    "memory": true,
+    "context7": false
+  },
+  "commands": [
+    "analyze",
+    "checkpoint",
+    "clarify",
+    "debug",
+    "harness-audit",
+    "implement",
+    "plan",
+    "refactor-clean",
+    "review",
+    "security-audit",
+    "ship",
+    "specify",
+    "tasks",
+    "verify"
+  ],
+  "commandCollisions": [],
+  "version": "4.1.1"
+}

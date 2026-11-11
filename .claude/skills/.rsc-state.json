@@ -1,0 +1,292 @@
+{
+  "skills": {
+    "analyze": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\analyze"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\analyze"
+    },
+    "asdd": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\asdd"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\asdd"
+    },
+    "automation-strategy": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\automation-strategy"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\automation-strategy"
+    },
+    "clarify": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\clarify"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\clarify"
+    },
+    "connect-tool": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\connect-tool"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\connect-tool"
+    },
+    "constitution": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\constitution"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\constitution"
+    },
+    "debug": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\debug"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\debug"
+    },
+    "decision-challenge": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\decision-challenge"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\decision-challenge"
+    },
+    "deprecation": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\deprecation"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\deprecation"
+    },
+    "design": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\design"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\design"
+    },
+    "fable-operator": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\fable-operator"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\fable-operator"
+    },
+    "ftd": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\ftd"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\ftd"
+    },
+    "harness": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\harness"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\harness"
+    },
+    "idea-refinement": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\idea-refinement"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\idea-refinement"
+    },
+    "implement": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\implement"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\implement"
+    },
+    "init": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\init"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\init"
+    },
+    "orient": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\orient"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\orient"
+    },
+    "parallel": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\parallel"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\parallel"
+    },
+    "plan": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\plan"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\plan"
+    },
+    "review": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\review"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\review"
+    },
+    "sdd-init": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\sdd-init"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\sdd-init"
+    },
+    "security-audit": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\security-audit"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\security-audit"
+    },
+    "ship": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\ship"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\ship"
+    },
+    "simplify-code": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\simplify-code"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\simplify-code"
+    },
+    "source-grounded-development": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\source-grounded-development"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\source-grounded-development"
+    },
+    "specify": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\specify"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\specify"
+    },
+    "suggest": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\suggest"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\suggest"
+    },
+    "tasks": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\tasks"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\tasks"
+    },
+    "tidy": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\tidy"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\tidy"
+    },
+    "unslop": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\unslop"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\unslop"
+    },
+    "ux": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\ux"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\ux"
+    },
+    "verify": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\verify"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\verify"
+    },
+    "worktrees": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\worktrees"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\worktrees"
+    },
+    "accessibility": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\accessibility"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\accessibility"
+    },
+    "astro": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\astro"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\astro"
+    },
+    "e2e-testing": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\e2e-testing"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\e2e-testing"
+    },
+    "postgresdb": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\postgresdb"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\postgresdb"
+    },
+    "typescript": {
+      "files": [
+        "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\skills\\typescript"
+      ],
+      "base": "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\skills\\typescript"
+    }
+  },
+  "agents": [
+    "developer",
+    "finding-verifier",
+    "refuter-correctness",
+    "refuter-security",
+    "refuter-tests"
+  ],
+  "agentCollisions": [],
+  "agentsKept": [],
+  "explicitAgents": [
+    "developer",
+    "finding-verifier",
+    "refuter-correctness",
+    "refuter-security",
+    "refuter-tests"
+  ],
+  "memory": {
+    "mode": "full",
+    "reason": "wired",
+    "paths": [
+      "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\session-memory-core.mjs",
+      "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\session-memory-adapter.mjs",
+      "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\session-memory.mjs",
+      "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\settings.local.json"
+    ]
+  },
+  "update": {
+    "mode": "hook"
+  },
+  "knowledge": {
+    "mode": "wired",
+    "reason": null,
+    "paths": [
+      "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\knowledge-sync.mjs",
+      "D:\\Proyectos\\MCP-IA\\DrMario\\.rsc\\trunk-policy.mjs",
+      "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\settings.local.json"
+    ]
+  },
+  "gitPermissions": {
+    "mode": "wired",
+    "path": "D:\\Proyectos\\MCP-IA\\DrMario\\.claude\\settings.json"
+  },
+  "policy": {
+    "baseAgents": true,
+    "alwaysOn": true,
+    "codeHooks": true,
+    "dangerGuard": true,
+    "laneGate": true,
+    "gitmojiGuard": true,
+    "memory": true,
+    "context7": false
+  },
+  "commands": [
+    "checkpoint",
+    "learn",
+    "resume-session",
+    "save-session"
+  ],
+  "commandCollisions": [],
+  "version": "4.1.2"
+}

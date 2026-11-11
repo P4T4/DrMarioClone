@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "id": "20261111-043937-install-copilot",
+  "createdAt": "2026-11-11T04:39:37.833Z",
+  "operation": "install",
+  "target": "copilot",
+  "cwd": "D:\\Proyectos\\MCP-IA\\DrMario",
+  "cliVersion": "4.1.1",
+  "entries": [
+    {
+      "path": ".github/rsc/.rsc-state.json",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\rsc\\.rsc-state.json"
+    },
+    {
+      "path": ".rsc/.version",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\.version"
+    },
+    {
+      "path": ".rsc/.base-versions.json",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\.base-versions.json"
+    },
+    {
+      "path": ".rsc/.no-context7",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\.no-context7"
+    },
+    {
+      "path": ".rsc/auto-update.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\auto-update.mjs"
+    },
+    {
+      "path": ".rsc/memslop-offer.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\memslop-offer.mjs"
+    },
+    {
+      "path": ".github/agents/developer.agent.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\agents\\developer.agent.md"
+    },
+    {
+      "path": ".github/agents/finding-verifier.agent.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\agents\\finding-verifier.agent.md"
+    },
+    {
+      "path": ".github/agents/refuter-correctness.agent.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\agents\\refuter-correctness.agent.md"
+    },
+    {
+      "path": ".github/agents/refuter-security.agent.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\agents\\refuter-security.agent.md"
+    },
+    {
+      "path": ".github/agents/refuter-tests.agent.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\agents\\refuter-tests.agent.md"
+    },
+    {
+      "path": ".github/prompts/analyze.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\analyze.prompt.md"
+    },
+    {
+      "path": ".github/prompts/checkpoint.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\checkpoint.prompt.md"
+    },
+    {
+      "path": ".github/prompts/clarify.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\clarify.prompt.md"
+    },
+    {
+      "path": ".github/prompts/debug.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\debug.prompt.md"
+    },
+    {
+      "path": ".github/prompts/harness-audit.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\harness-audit.prompt.md"
+    },
+    {
+      "path": ".github/prompts/implement.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\implement.prompt.md"
+    },
+    {
+      "path": ".github/prompts/plan.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\plan.prompt.md"
+    },
+    {
+      "path": ".github/prompts/refactor-clean.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\refactor-clean.prompt.md"
+    },
+    {
+      "path": ".github/prompts/review.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\review.prompt.md"
+    },
+    {
+      "path": ".github/prompts/security-audit.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\security-audit.prompt.md"
+    },
+    {
+      "path": ".github/prompts/ship.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\ship.prompt.md"
+    },
+    {
+      "path": ".github/prompts/specify.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\specify.prompt.md"
+    },
+    {
+      "path": ".github/prompts/tasks.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\tasks.prompt.md"
+    },
+    {
+      "path": ".github/prompts/verify.prompt.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\prompts\\verify.prompt.md"
+    },
+    {
+      "path": ".github/rsc/accessibility",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/accessibility",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\accessibility"
+    },
+    {
+      "path": ".github/rsc/analyze",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\analyze"
+    },
+    {
+      "path": ".rsc/skills/analyze",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\analyze"
+    },
+    {
+      "path": ".github/rsc/asdd",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\asdd"
+    },
+    {
+      "path": ".rsc/skills/asdd",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\asdd"
+    },
+    {
+      "path": ".github/rsc/astro",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/astro",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\astro"
+    },
+    {
+      "path": ".github/rsc/automation-strategy",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\automation-strategy"
+    },
+    {
+      "path": ".rsc/skills/automation-strategy",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\automation-strategy"
+    },
+    {
+      "path": ".github/rsc/clarify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\clarify"
+    },
+    {
+      "path": ".rsc/skills/clarify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\clarify"
+    },
+    {
+      "path": ".github/rsc/connect-tool",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\connect-tool"
+    },
+    {
+      "path": ".rsc/skills/connect-tool",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\connect-tool"
+    },
+    {
+      "path": ".github/rsc/constitution",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\constitution"
+    },
+    {
+      "path": ".rsc/skills/constitution",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\constitution"
+    },
+    {
+      "path": ".github/rsc/debug",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\debug"
+    },
+    {
+      "path": ".rsc/skills/debug",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\debug"
+    },
+    {
+      "path": ".github/rsc/decision-challenge",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\decision-challenge"
+    },
+    {
+      "path": ".rsc/skills/decision-challenge",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\decision-challenge"
+    },
+    {
+      "path": ".github/rsc/deprecation",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\deprecation"
+    },
+    {
+      "path": ".rsc/skills/deprecation",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\deprecation"
+    },
+    {
+      "path": ".github/rsc/design",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\design"
+    },
+    {
+      "path": ".rsc/skills/design",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\design"
+    },
+    {
+      "path": ".github/rsc/e2e-testing",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/e2e-testing",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\e2e-testing"
+    },
+    {
+      "path": ".github/rsc/fable-operator",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\fable-operator"
+    },
+    {
+      "path": ".rsc/skills/fable-operator",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\fable-operator"
+    },
+    {
+      "path": ".github/rsc/ftd",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\ftd"
+    },
+    {
+      "path": ".rsc/skills/ftd",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\ftd"
+    },
+    {
+      "path": ".github/rsc/harness",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\harness"
+    },
+    {
+      "path": ".rsc/skills/harness",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\harness"
+    },
+    {
+      "path": ".github/rsc/idea-refinement",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\idea-refinement"
+    },
+    {
+      "path": ".rsc/skills/idea-refinement",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\idea-refinement"
+    },
+    {
+      "path": ".github/rsc/implement",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\implement"
+    },
+    {
+      "path": ".rsc/skills/implement",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\implement"
+    },
+    {
+      "path": ".github/rsc/init",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\init"
+    },
+    {
+      "path": ".rsc/skills/init",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\init"
+    },
+    {
+      "path": ".github/rsc/orient",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\orient"
+    },
+    {
+      "path": ".rsc/skills/orient",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\orient"
+    },
+    {
+      "path": ".github/rsc/parallel",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\parallel"
+    },
+    {
+      "path": ".rsc/skills/parallel",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\parallel"
+    },
+    {
+      "path": ".github/rsc/plan",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\plan"
+    },
+    {
+      "path": ".rsc/skills/plan",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\plan"
+    },
+    {
+      "path": ".github/rsc/postgresdb",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/postgresdb",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\postgresdb"
+    },
+    {
+      "path": ".github/rsc/review",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\review"
+    },
+    {
+      "path": ".rsc/skills/review",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\review"
+    },
+    {
+      "path": ".github/rsc/sdd-init",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\sdd-init"
+    },
+    {
+      "path": ".rsc/skills/sdd-init",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\sdd-init"
+    },
+    {
+      "path": ".github/rsc/security-audit",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\security-audit"
+    },
+    {
+      "path": ".rsc/skills/security-audit",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\security-audit"
+    },
+    {
+      "path": ".github/rsc/ship",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\ship"
+    },
+    {
+      "path": ".rsc/skills/ship",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\ship"
+    },
+    {
+      "path": ".github/rsc/simplify-code",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\simplify-code"
+    },
+    {
+      "path": ".rsc/skills/simplify-code",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\simplify-code"
+    },
+    {
+      "path": ".github/rsc/source-grounded-development",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\source-grounded-development"
+    },
+    {
+      "path": ".rsc/skills/source-grounded-development",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\source-grounded-development"
+    },
+    {
+      "path": ".github/rsc/specify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\specify"
+    },
+    {
+      "path": ".rsc/skills/specify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\specify"
+    },
+    {
+      "path": ".github/rsc/suggest",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\suggest"
+    },
+    {
+      "path": ".rsc/skills/suggest",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\suggest"
+    },
+    {
+      "path": ".github/rsc/tasks",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\tasks"
+    },
+    {
+      "path": ".rsc/skills/tasks",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\tasks"
+    },
+    {
+      "path": ".github/rsc/tidy",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\tidy"
+    },
+    {
+      "path": ".rsc/skills/tidy",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\tidy"
+    },
+    {
+      "path": ".github/rsc/typescript",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/typescript",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\typescript"
+    },
+    {
+      "path": ".github/rsc/unslop",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\unslop"
+    },
+    {
+      "path": ".rsc/skills/unslop",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\unslop"
+    },
+    {
+      "path": ".github/rsc/ux",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\ux"
+    },
+    {
+      "path": ".rsc/skills/ux",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\ux"
+    },
+    {
+      "path": ".github/rsc/verify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\verify"
+    },
+    {
+      "path": ".rsc/skills/verify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\verify"
+    },
+    {
+      "path": ".github/rsc/worktrees",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.github\\rsc\\worktrees"
+    },
+    {
+      "path": ".rsc/skills/worktrees",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\worktrees"
+    },
+    {
+      "path": ".github/copilot-instructions.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.github\\copilot-instructions.md"
+    }
+  ]
+}

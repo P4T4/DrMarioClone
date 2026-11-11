@@ -1,0 +1,697 @@
+{
+  "schemaVersion": 1,
+  "id": "20261111-043935-install-claude",
+  "createdAt": "2026-11-11T04:39:35.065Z",
+  "operation": "install",
+  "target": "claude",
+  "cwd": "D:\\Proyectos\\MCP-IA\\DrMario",
+  "cliVersion": "4.1.1",
+  "entries": [
+    {
+      "path": ".claude/skills/.rsc-state.json",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\skills\\.rsc-state.json"
+    },
+    {
+      "path": ".rsc/.version",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\.version"
+    },
+    {
+      "path": ".rsc/.base-versions.json",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\.base-versions.json"
+    },
+    {
+      "path": ".rsc/.no-context7",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\.no-context7"
+    },
+    {
+      "path": ".rsc/session-memory-core.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\session-memory-core.mjs"
+    },
+    {
+      "path": ".rsc/session-memory-adapter.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\session-memory-adapter.mjs"
+    },
+    {
+      "path": ".rsc/session-memory.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\session-memory.mjs"
+    },
+    {
+      "path": ".claude/settings.local.json",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\settings.local.json"
+    },
+    {
+      "path": ".rsc/auto-update.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\auto-update.mjs"
+    },
+    {
+      "path": ".rsc/memslop-offer.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\memslop-offer.mjs"
+    },
+    {
+      "path": ".rsc/knowledge-sync.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\knowledge-sync.mjs"
+    },
+    {
+      "path": ".rsc/trunk-policy.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\trunk-policy.mjs"
+    },
+    {
+      "path": ".claude/settings.json",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\settings.json"
+    },
+    {
+      "path": ".claude/agents/developer.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\agents\\developer.md"
+    },
+    {
+      "path": ".claude/agents/finding-verifier.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\agents\\finding-verifier.md"
+    },
+    {
+      "path": ".claude/agents/refuter-correctness.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\agents\\refuter-correctness.md"
+    },
+    {
+      "path": ".claude/agents/refuter-security.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\agents\\refuter-security.md"
+    },
+    {
+      "path": ".claude/agents/refuter-tests.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\agents\\refuter-tests.md"
+    },
+    {
+      "path": ".claude/commands/checkpoint.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\commands\\checkpoint.md"
+    },
+    {
+      "path": ".claude/commands/learn.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\commands\\learn.md"
+    },
+    {
+      "path": ".claude/commands/resume-session.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\commands\\resume-session.md"
+    },
+    {
+      "path": ".claude/commands/save-session.md",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\commands\\save-session.md"
+    },
+    {
+      "path": ".claude/skills/accessibility",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/accessibility",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/analyze",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\analyze"
+    },
+    {
+      "path": ".rsc/skills/analyze",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\analyze"
+    },
+    {
+      "path": ".claude/skills/asdd",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\asdd"
+    },
+    {
+      "path": ".rsc/skills/asdd",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\asdd"
+    },
+    {
+      "path": ".claude/skills/astro",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/astro",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/automation-strategy",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\automation-strategy"
+    },
+    {
+      "path": ".rsc/skills/automation-strategy",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\automation-strategy"
+    },
+    {
+      "path": ".claude/skills/clarify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\clarify"
+    },
+    {
+      "path": ".rsc/skills/clarify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\clarify"
+    },
+    {
+      "path": ".claude/skills/connect-tool",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\connect-tool"
+    },
+    {
+      "path": ".rsc/skills/connect-tool",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\connect-tool"
+    },
+    {
+      "path": ".claude/skills/constitution",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\constitution"
+    },
+    {
+      "path": ".rsc/skills/constitution",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\constitution"
+    },
+    {
+      "path": ".claude/skills/debug",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\debug"
+    },
+    {
+      "path": ".rsc/skills/debug",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\debug"
+    },
+    {
+      "path": ".claude/skills/decision-challenge",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\decision-challenge"
+    },
+    {
+      "path": ".rsc/skills/decision-challenge",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\decision-challenge"
+    },
+    {
+      "path": ".claude/skills/deprecation",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\deprecation"
+    },
+    {
+      "path": ".rsc/skills/deprecation",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\deprecation"
+    },
+    {
+      "path": ".claude/skills/design",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\design"
+    },
+    {
+      "path": ".rsc/skills/design",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\design"
+    },
+    {
+      "path": ".claude/skills/e2e-testing",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/e2e-testing",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/fable-operator",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\fable-operator"
+    },
+    {
+      "path": ".rsc/skills/fable-operator",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\fable-operator"
+    },
+    {
+      "path": ".claude/skills/ftd",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\ftd"
+    },
+    {
+      "path": ".rsc/skills/ftd",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\ftd"
+    },
+    {
+      "path": ".claude/skills/harness",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\harness"
+    },
+    {
+      "path": ".rsc/skills/harness",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\harness"
+    },
+    {
+      "path": ".claude/skills/idea-refinement",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\idea-refinement"
+    },
+    {
+      "path": ".rsc/skills/idea-refinement",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\idea-refinement"
+    },
+    {
+      "path": ".claude/skills/implement",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\implement"
+    },
+    {
+      "path": ".rsc/skills/implement",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\implement"
+    },
+    {
+      "path": ".claude/skills/init",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\init"
+    },
+    {
+      "path": ".rsc/skills/init",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\init"
+    },
+    {
+      "path": ".claude/skills/orient",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\orient"
+    },
+    {
+      "path": ".rsc/skills/orient",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\orient"
+    },
+    {
+      "path": ".claude/skills/parallel",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\parallel"
+    },
+    {
+      "path": ".rsc/skills/parallel",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\parallel"
+    },
+    {
+      "path": ".claude/skills/plan",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\plan"
+    },
+    {
+      "path": ".rsc/skills/plan",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\plan"
+    },
+    {
+      "path": ".claude/skills/postgresdb",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/postgresdb",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/review",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\review"
+    },
+    {
+      "path": ".rsc/skills/review",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\review"
+    },
+    {
+      "path": ".claude/skills/sdd-init",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\sdd-init"
+    },
+    {
+      "path": ".rsc/skills/sdd-init",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\sdd-init"
+    },
+    {
+      "path": ".claude/skills/security-audit",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\security-audit"
+    },
+    {
+      "path": ".rsc/skills/security-audit",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\security-audit"
+    },
+    {
+      "path": ".claude/skills/ship",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\ship"
+    },
+    {
+      "path": ".rsc/skills/ship",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\ship"
+    },
+    {
+      "path": ".claude/skills/simplify-code",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\simplify-code"
+    },
+    {
+      "path": ".rsc/skills/simplify-code",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\simplify-code"
+    },
+    {
+      "path": ".claude/skills/source-grounded-development",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\source-grounded-development"
+    },
+    {
+      "path": ".rsc/skills/source-grounded-development",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\source-grounded-development"
+    },
+    {
+      "path": ".claude/skills/specify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\specify"
+    },
+    {
+      "path": ".rsc/skills/specify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\specify"
+    },
+    {
+      "path": ".claude/skills/suggest",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\suggest"
+    },
+    {
+      "path": ".rsc/skills/suggest",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\suggest"
+    },
+    {
+      "path": ".claude/skills/tasks",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\tasks"
+    },
+    {
+      "path": ".rsc/skills/tasks",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\tasks"
+    },
+    {
+      "path": ".claude/skills/tidy",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\tidy"
+    },
+    {
+      "path": ".rsc/skills/tidy",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\tidy"
+    },
+    {
+      "path": ".claude/skills/typescript",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/typescript",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/unslop",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\unslop"
+    },
+    {
+      "path": ".rsc/skills/unslop",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\unslop"
+    },
+    {
+      "path": ".claude/skills/ux",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\ux"
+    },
+    {
+      "path": ".rsc/skills/ux",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\ux"
+    },
+    {
+      "path": ".claude/skills/verify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\verify"
+    },
+    {
+      "path": ".rsc/skills/verify",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\verify"
+    },
+    {
+      "path": ".claude/skills/worktrees",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.claude\\skills\\worktrees"
+    },
+    {
+      "path": ".rsc/skills/worktrees",
+      "existed": true,
+      "kind": "dir",
+      "contentPath": "files\\.rsc\\skills\\worktrees"
+    },
+    {
+      "path": ".claude/rsc-bootstrap.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.claude\\rsc-bootstrap.mjs"
+    },
+    {
+      "path": ".rsc/session-start.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\session-start.mjs"
+    },
+    {
+      "path": ".rsc/worklog-checkpoint.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\worklog-checkpoint.mjs"
+    },
+    {
+      "path": ".rsc/hook-once.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\hook-once.mjs"
+    },
+    {
+      "path": ".rsc/shell-unwrap.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\shell-unwrap.mjs"
+    },
+    {
+      "path": ".rsc/worktree-reaper.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\worktree-reaper.mjs"
+    },
+    {
+      "path": ".rsc/team-safe-start.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\team-safe-start.mjs"
+    },
+    {
+      "path": ".rsc/copy-guard.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\copy-guard.mjs"
+    },
+    {
+      "path": ".rsc/copy-rules.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\copy-rules.mjs"
+    },
+    {
+      "path": ".rsc/danger-guard.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\danger-guard.mjs"
+    },
+    {
+      "path": ".rsc/ship-guard.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\ship-guard.mjs"
+    },
+    {
+      "path": ".rsc/branch-guard.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\branch-guard.mjs"
+    },
+    {
+      "path": ".rsc/gitmoji-guard.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\gitmoji-guard.mjs"
+    },
+    {
+      "path": ".rsc/userprompt-gate.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\userprompt-gate.mjs"
+    },
+    {
+      "path": ".rsc/sello.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\sello.mjs"
+    },
+    {
+      "path": ".rsc/asdd-gate.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\asdd-gate.mjs"
+    },
+    {
+      "path": ".rsc/spec-completeness.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\spec-completeness.mjs"
+    },
+    {
+      "path": ".rsc/ftd-nudge.mjs",
+      "existed": true,
+      "kind": "file",
+      "contentPath": "files\\.rsc\\ftd-nudge.mjs"
+    }
+  ]
+}

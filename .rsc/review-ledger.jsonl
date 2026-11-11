@@ -1,0 +1,7 @@
+{"type":"round","task":"duelo-privado-online/T001","n":1,"at":"2026-11-11T05:53:23.446Z"}
+{"type":"round","task":"duelo-privado-online/T001","n":2,"at":"2026-11-11T06:07:04.497Z"}
+{"type":"round","task":"duelo-privado-online/T002","n":1,"at":"2026-11-11T06:18:08.263Z"}
+{"type":"finding","id":"L1","task":"","at":"2026-11-11T06:23:35.286Z","file":"tests/game/core/board-initialization.test.ts","class":"test evidence","claim":"The reviewed inputs do not show the required failing test run before implementation.","severity":"should-fix"}
+{"type":"round","task":"duelo-privado-online/T002","n":2,"at":"2026-11-11T06:23:56.775Z"}
+{"type":"outcome","id":"L1","outcome":"fixed","at":"2026-11-11T06:28:10.429Z"}
+{"type":"round","task":"duelo-privado-online/T002","n":3,"at":"2026-11-11T06:31:02.140Z"}

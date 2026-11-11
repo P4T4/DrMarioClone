@@ -1,0 +1,836 @@
+{
+  "schemaVersion": 1,
+  "id": "20261111-015029-onboarding-transaction-claude-copilot",
+  "createdAt": "2026-11-11T01:50:29.574Z",
+  "operation": "onboarding-transaction",
+  "target": "claude-copilot",
+  "cwd": "D:\\Proyectos\\MCP-IA\\DrMario",
+  "cliVersion": "onboarding",
+  "entries": [
+    {
+      "path": ".claude/agents/developer.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/agents/finding-verifier.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/agents/refuter-correctness.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/agents/refuter-security.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/agents/refuter-tests.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/commands/checkpoint.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/commands/learn.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/commands/resume-session.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/commands/save-session.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/rsc-bootstrap.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/settings.json",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/settings.local.json",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/.rsc-state.json",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/analyze",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/asdd",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/automation-strategy",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/clarify",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/connect-tool",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/constitution",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/debug",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/decision-challenge",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/deprecation",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/design",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/fable-operator",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/ftd",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/harness",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/idea-refinement",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/implement",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/init",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/orient",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/parallel",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/plan",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/review",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/sdd-init",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/security-audit",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/ship",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/simplify-code",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/source-grounded-development",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/specify",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/suggest",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/tasks",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/tidy",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/unslop",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/ux",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/verify",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".claude/skills/worktrees",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/agents/developer.agent.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/agents/finding-verifier.agent.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/agents/refuter-correctness.agent.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/agents/refuter-security.agent.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/agents/refuter-tests.agent.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/copilot-instructions.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/analyze.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/checkpoint.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/clarify.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/debug.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/harness-audit.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/implement.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/plan.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/refactor-clean.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/review.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/security-audit.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/ship.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/specify.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/tasks.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/prompts/verify.prompt.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/.rsc-state.json",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/analyze",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/asdd",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/automation-strategy",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/clarify",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/connect-tool",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/constitution",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/debug",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/decision-challenge",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/deprecation",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/design",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/fable-operator",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/ftd",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/harness",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/idea-refinement",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/implement",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/init",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/orient",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/parallel",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/plan",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/review",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/sdd-init",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/security-audit",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/ship",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/simplify-code",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/source-grounded-development",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/specify",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/suggest",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/tasks",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/tidy",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/unslop",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/ux",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/verify",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".github/rsc/worktrees",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc.json",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/.base-versions.json",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/.no-context7",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/.no-trunk-open",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/.version",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/asdd-gate.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/auto-update.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/branch-guard.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/copy-guard.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/copy-rules.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/danger-guard.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/ftd-nudge.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/gitmoji-guard.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/hook-once.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/knowledge-sync.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/memslop-offer.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/sello.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/session-memory-adapter.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/session-memory-core.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/session-memory.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/session-start.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/shell-unwrap.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/ship-guard.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/analyze",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/asdd",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/automation-strategy",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/clarify",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/connect-tool",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/constitution",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/debug",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/decision-challenge",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/deprecation",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/design",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/fable-operator",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/ftd",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/harness",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/idea-refinement",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/implement",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/init",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/orient",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/parallel",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/plan",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/review",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/sdd-init",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/security-audit",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/ship",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/simplify-code",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/source-grounded-development",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/specify",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/suggest",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/tasks",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/tidy",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/unslop",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/ux",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/verify",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/skills/worktrees",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/spec-completeness.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/team-safe-start.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/trunk-policy.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/userprompt-gate.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/worklog-checkpoint.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": ".rsc/worktree-reaper.mjs",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": "02-DOCS/wiki/harness/decisions.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": "02-DOCS/wiki/harness/installation-plan.md",
+      "existed": false,
+      "kind": "missing"
+    },
+    {
+      "path": "02-DOCS/wiki/harness/user-profile.md",
+      "existed": false,
+      "kind": "missing"
+    }
+  ]
+}
