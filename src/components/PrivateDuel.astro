@@ -1,0 +1,381 @@
+<section class="duel" aria-labelledby="duel-heading">
+  <h2 id="duel-heading">Juega con otra persona</h2>
+  <div id="duel-lobby" class="lobby">
+    <form id="create-room-form">
+      <label for="create-alias">Tu alias</label>
+      <input id="create-alias" name="alias" autocomplete="nickname" required />
+      <button type="submit">Crear sala</button>
+    </form>
+
+    <form id="join-room-form">
+      <label for="join-alias">Alias para unirte</label>
+      <input id="join-alias" name="alias" autocomplete="nickname" required />
+      <label for="join-code">Código de sala</label>
+      <input
+        id="join-code"
+        name="code"
+        maxlength="8"
+        autocomplete="off"
+        spellcheck="false"
+        required
+      />
+      <button type="submit">Unirse a sala</button>
+    </form>
+
+    <p id="room-error" class="error" role="alert" hidden></p>
+    <div id="recovery-actions" class="actions"></div>
+  </div>
+
+  <section
+    id="room-panel"
+    class="room-panel"
+    aria-labelledby="room-heading"
+    hidden
+  >
+    <h2 id="room-heading">Sala creada</h2>
+    <div class="room-code">
+      <label for="room-code">Código para invitar</label>
+      <input id="room-code" readonly aria-label="Código para invitar" />
+    </div>
+    <p id="room-alert" class="error" role="alert" hidden></p>
+    <div id="room-recovery-actions" class="actions"></div>
+    <p id="room-status" role="status" aria-live="polite" aria-atomic="true">
+      Conectando…
+    </p>
+
+    <div id="connection-controls" class="actions" hidden>
+      <button id="reconnect-button" type="button">
+        Reconectar
+      </button>
+      <button id="leave-button" type="button">
+        Salir
+      </button>
+    </div>
+
+    <section id="match-panel" aria-labelledby="match-heading" hidden>
+      <h3 id="match-heading">Partida</h3>
+      <p id="action-status" aria-live="polite"></p>
+      <dl class="match-overview" aria-label="Resumen de la partida">
+        <div>
+          <dt>Tiempo activo</dt>
+          <dd id="match-time">00:00</dd>
+        </div>
+        <div>
+          <dt>Próxima cápsula</dt>
+          <dd id="next-capsule">No disponible</dd>
+        </div>
+      </dl>
+      <div class="boards">
+        <section aria-labelledby="own-board-heading">
+          <h4 id="own-board-heading">Tu tablero</h4>
+          <div id="own-board" class="board">
+            <div
+              id="own-board-renderer"
+              class="board__renderer"
+              aria-hidden="true"
+            ></div>
+            <div
+              id="own-board-accessible"
+              class="board__accessible-grid"
+              role="grid"
+              aria-label="Tu tablero de juego"
+            ></div>
+          </div>
+          <p id="own-stats"></p>
+        </section>
+        <section aria-labelledby="opponent-board-heading">
+          <h4 id="opponent-board-heading">Tablero rival</h4>
+          <div id="opponent-board" class="board">
+            <div
+              id="opponent-board-renderer"
+              class="board__renderer"
+              aria-hidden="true"
+            ></div>
+            <div
+              id="opponent-board-accessible"
+              class="board__accessible-grid"
+              role="grid"
+              aria-label="Tablero rival"
+            ></div>
+          </div>
+          <p id="opponent-stats"></p>
+        </section>
+      </div>
+
+      <div class="touch-controls" aria-label="Controles táctiles">
+        <button
+          type="button"
+          data-input="MoveLeft"
+          aria-label="Mover a la izquierda"
+        >
+          ←
+        </button>
+        <button
+          type="button"
+          data-input="MoveRight"
+          aria-label="Mover a la derecha"
+        >
+          →
+        </button>
+        <button type="button" data-input="SoftDrop" aria-label="Bajar una fila">
+          ↓
+        </button>
+        <button
+          type="button"
+          data-input="RotateCounterclockwise"
+          aria-label="Girar a la izquierda"
+        >
+          Girar ↶
+        </button>
+        <button
+          type="button"
+          data-input="RotateClockwise"
+          aria-label="Girar a la derecha"
+        >
+          Girar ↷
+        </button>
+        <button type="button" data-input="HardDrop" aria-label="Fijar cápsula">
+          Fijar
+        </button>
+      </div>
+    </section>
+
+    <section class="chat" aria-labelledby="chat-heading">
+      <h3 id="chat-heading">Chat de la sala</h3>
+      <button id="mute-button" type="button" aria-pressed="false">
+        Silenciar rival
+      </button>
+      <ol id="chat-history" aria-live="polite" aria-relevant="additions"></ol>
+      <form id="chat-form">
+        <label for="chat-message">Mensaje de chat</label>
+        <input id="chat-message" name="message" maxlength="200" required />
+        <button type="submit">Enviar mensaje</button>
+      </form>
+      <p id="chat-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="result-panel" aria-labelledby="result-heading" hidden>
+      <h3 id="result-heading">Resultado de la partida</h3>
+      <p id="result-text"></p>
+      <p id="result-stats"></p>
+      <button id="return-button" type="button">
+        Volver al inicio
+      </button>
+    </section>
+  </section>
+</section>
+
+<style>
+  [hidden] {
+    display: none !important;
+  }
+
+  .duel {
+    display: grid;
+    gap: 1rem;
+    margin-block: 2rem;
+  }
+
+  .lobby,
+  .room-panel,
+  .chat {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .lobby form,
+  .chat form,
+  .room-code {
+    display: grid;
+    grid-template-columns: minmax(8rem, 1fr) minmax(12rem, 2fr) auto;
+    align-items: end;
+    gap: 0.75rem;
+  }
+
+  .lobby form label,
+  .chat label,
+  .room-code label {
+    grid-column: 1 / -1;
+    font-weight: 700;
+  }
+
+  input,
+  button {
+    min-height: 2.75rem;
+    font: inherit;
+  }
+
+  input {
+    min-width: 0;
+    padding: 0.4rem 0.6rem;
+  }
+
+  button {
+    padding: 0.45rem 0.8rem;
+    color: #fff;
+    background: #172033;
+    border: 2px solid #172033;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+
+  button:focus-visible,
+  input:focus-visible {
+    outline: 3px solid #005fcc;
+    outline-offset: 3px;
+  }
+
+  .room-panel {
+    padding: 1rem;
+    border: 2px solid #172033;
+    border-radius: 0.5rem;
+  }
+
+  .room-code {
+    grid-template-columns: 1fr minmax(12rem, 2fr);
+  }
+
+  .room-code label {
+    grid-column: auto;
+  }
+
+  .boards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .match-overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin: 0;
+  }
+
+  .match-overview dt {
+    font-weight: 700;
+  }
+
+  .match-overview dd {
+    margin: 0;
+  }
+
+  .board {
+    position: relative;
+    width: min(100%, 22rem);
+    aspect-ratio: 1 / 2;
+    border: 2px solid #172033;
+    background: #f5f7fa;
+  }
+
+  .board__renderer,
+  .board__accessible-grid {
+    position: absolute;
+    inset: 0;
+  }
+
+  .board__renderer canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .board__accessible-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .cell {
+    display: grid;
+    place-items: center;
+    min-width: 0;
+    border: 1px solid #c8d0dc;
+    font-size: clamp(0.55rem, 2vw, 0.9rem);
+    font-weight: 700;
+  }
+
+  .cell--virus {
+    border-radius: 50%;
+  }
+
+  .cell--capsule {
+    border-radius: 0.75rem;
+  }
+
+  .cell--obstacle {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 3px,
+      #172033 3px,
+      #172033 5px
+    );
+  }
+
+  .cell--red {
+    color: #7f1d1d;
+    background-color: #fecaca;
+  }
+
+  .cell--blue {
+    color: #123b70;
+    background-color: #bfdbfe;
+  }
+
+  .cell--yellow {
+    color: #573d00;
+    background-color: #fef08a;
+  }
+
+  .touch-controls,
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .chat ol {
+    display: grid;
+    gap: 0.4rem;
+    max-height: 12rem;
+    overflow: auto;
+    padding-inline-start: 1.5rem;
+  }
+
+  .error {
+    color: #7f1d1d;
+    font-weight: 700;
+  }
+
+  @media (max-width: 40rem) {
+    .lobby form,
+    .chat form,
+    .room-code {
+      grid-template-columns: 1fr;
+    }
+
+    .lobby form label,
+    .chat label,
+    .room-code label {
+      grid-column: auto;
+    }
+
+    .boards {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  import '../ui/private-duel';
+</script>

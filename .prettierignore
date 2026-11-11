@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.rsc/
+.rsc.json
+.github/rsc/
+.claude/
+.agents/
+01-TOOLS/
+02-DOCS/
+pnpm-lock.yaml
